@@ -3,19 +3,19 @@
  * @brief Definición de la clase Banco.
  *
  * @details
- * Esta clase 
+ * Esta clase representa a un banco en el sistema bancario. Contiene información básica del banco, como su nombre y una lista de titulares. Proporciona métodos para acceder y modificar estos datos.
  * 
  * -----------------------------------------------------------------------------
  * Estándar CRC (Clase - Responsabilidad - Colaboración)
  * -----------------------------------------------------------------------------
  *
  * Clase:
- *   Cliente
+ *   Banco
  *
  * Responsabilidades:
- *   - Mantener un registro del estado actual del cliente.
- *   - Almacenar la información básica del cliente.
- *   - Proporcionar métodos para acceder y modificar los datos del cliente.
+ *   - Mantener un registro del estado actual del banco.
+ *   - Almacenar la información básica del banco.
+ *   - Proporcionar métodos para acceder y modificar los datos del banco.
  *
  * FALTA:
  * Colaboradores:
