@@ -10,7 +10,7 @@
 		std::string getIdentification();
 		std::string getName();
 		std::string getTelefono();
-        void setIdentification(std::string auxIdentification);
+        void setIdentification(std::string codigo);
         void setName(std::string auxName);
 		void setTelefono(std::string auxTelefono);
 
