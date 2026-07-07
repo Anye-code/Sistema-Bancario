@@ -11,19 +11,19 @@
 #include "Cliente.h"
 #include <string>
 // Constructor: 
-Cliente::Cliente(std::string auxIdentification, std::string auxName, std::string auxTelefono) {
-    Identification = auxIdentification;
-    Name = auxName;
+Cliente::Cliente(std::string auxIdentificacion, std::string auxNombre, std::string auxTelefono) {
+    Identificacion = auxIdentificacion;
+    Nombre = auxNombre;
     Telefono = auxTelefono;
 }
 
 // Getters
-std::string Cliente::getIdentification() {
-    return Identification;
+std::string Cliente::getIdentificacion() {
+    return Identificacion;
 }
 
-std::string Cliente::getName() {
-    return Name;
+std::string Cliente::getNombre() {
+    return Nombre;
 }
 
 std::string Cliente::getTelefono() {
@@ -31,12 +31,12 @@ std::string Cliente::getTelefono() {
 }
 
 // Setters
-void Cliente::setIdentification(std::string auxIdentification) {
-    Identification = auxIdentification;
+void Cliente::setIdentificacion(std::string auxIdentificacion) {
+    Identificacion = auxIdentificacion;
 }
 
-void Cliente::setName(std::string auxName) {
-    Name = auxName;
+void Cliente::setNombre(std::string auxNombre) {
+    Nombre = auxNombre;
 }
 
 void Cliente::setTelefono(std::string auxTelefono) {

@@ -1,9 +1,9 @@
 /**
- * @file Cliente.h
- * @brief Definición de la clase Cliente.
+ * @file Banco.h
+ * @brief Definición de la clase Banco.
  *
  * @details
- * Esta clase representa a un cliente en el sistema bancario. Contiene información básica del cliente, como su identificación, nombre y número de teléfono. Proporciona métodos para acceder y modificar estos datos.
+ * Esta clase 
  * 
  * -----------------------------------------------------------------------------
  * Estándar CRC (Clase - Responsabilidad - Colaboración)
@@ -50,23 +50,25 @@
  * junto con este programa. Si no, consulte <https://www.gnu.org/licenses/>.
  */
 
-
- #ifndef CLIENTE_H
-#define CLIENTE_H
+#ifndef BANCO_H
+#define BANCO_H
 #include <string>
+#include <vector>
+#include "Titularidad.h"
+#include "Cliente.h"
+using namespace std;
 
-class Cliente {
-	private:
-		std::string Identificacion, Nombre, Telefono;
-	public:
-		Cliente(std::string auxIdentificacion, std::string auxNombre, std::string auxTelefono);
-		std::string getIdentificacion();
-		std::string getNombre();
-		std::string getTelefono();
-        void setIdentificacion(std::string codigo);
-        void setNombre(std::string auxNombre);
-		void setTelefono(std::string auxTelefono);
+class Banco{
+    private:string Nombre;
+        vector<Titularidad> titulares;
+    public:
+        Banco(string nombre);
+        string getNombre();
+        void addTitularidad(Titularidad t);
+        void addTitularidadReferencia(Titularidad& t);
+        void imprimirDatos();
+        void calcularPromedio();
+};
 
-	};
 
-#endif // CLIENTE_H
+#endif // BANCO_H
