@@ -5,9 +5,11 @@
 #include <string>
 using namespace std;
 class Cuenta {
+    
 protected: // Visibilidad '#' en UML
 string id;
 long saldo;
+
 public: // Visibilidad '+' en UML
 Cuenta(string id, long saldo);
 string getNumeroCuenta();

@@ -19,19 +19,7 @@
  *
  * FALTA:
  * Colaboradores:
- *   - Vehicle - Bus y Car:
- *     * Crea instancias y las almacena en el vector correspondiente.
- *   - Passenger:
- *     * Crea instancias y las almacena y las almacena en el vector correspondiente.
- *   - Grid:
- *     * Encapsula e instancia un objeto de esta clase.
- *   - ParkingZone:
- *     * Encapsula e instancia un objeto de esta clase.
- *   - CGame (Controlador del Juego):
- *     * Manipula directamente a MGame usando sus metodos para cambiar el estado del juego.
- *   - VGame (Vista del Juego):
- *     * Consulta sus componentes para presentarlos al usuario.
- *
+ * 
  * -----------------------------------------------------------------------------
  *
  * @license GNU General Public License v3.0 (GPL)
@@ -69,6 +57,5 @@ class Banco{
         void imprimirDatos();
         void calcularPromedio();
 };
-
 
 #endif // BANCO_H
