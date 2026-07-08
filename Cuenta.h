@@ -66,12 +66,12 @@ protected:
 string id;
 long saldo;
 public:
-Cuenta(string id, long saldo);
+    Cuenta(string id, long saldo);
 string getNumeroCuenta();
-long getSaldo();
-void setNumeroCuenta(string id);
-void setSaldo(long saldo);
-bool retirarDinero(long cantidad);
-void consignarDinero(long cantidad);
+    long getSaldo();
+    void setNumeroCuenta(string id);
+    void setSaldo(long saldo);
+    bool retirarDinero(long cantidad);
+    void consignarDinero(long cantidad);
 };
-#endif
+#endif //CUENTA_H

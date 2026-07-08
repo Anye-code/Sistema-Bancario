@@ -58,4 +58,4 @@ public:
 CuentaAhorros(string auxNumero, long auxSaldo, double auxTasa);
     void aplicarInteres();
 };
-#endif
+#endif //CUENTAHORROS_H
