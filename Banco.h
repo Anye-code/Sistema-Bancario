@@ -3,8 +3,14 @@
  * @brief Definición de la clase Banco.
  *
  * @details
- * Esta clase representa a un banco en el sistema bancario. Contiene información básica del banco, como su nombre y una lista de titulares. Proporciona métodos para acceder y modificar estos datos.
- * 
+ * Esta clase representa un banco dentro del sistema bancario.
+ * Almacena el nombre del banco y el conjunto de titularidades
+ * registradas, permitiendo administrar la información asociada
+ * a los clientes y sus cuentas bancarias. Además, proporciona
+ * operaciones para agregar nuevas titularidades, consultar la
+ * información registrada y calcular el saldo promedio de las
+ * cuentas vinculadas al banco.
+ *
  * -----------------------------------------------------------------------------
  * Estándar CRC (Clase - Responsabilidad - Colaboración)
  * -----------------------------------------------------------------------------
@@ -13,13 +19,31 @@
  *   Banco
  *
  * Responsabilidades:
- *   - Mantener un registro del estado actual del banco.
- *   - Almacenar la información básica del banco.
- *   - Proporcionar métodos para acceder y modificar los datos del banco.
+ *   - Representar un banco dentro del sistema bancario.
+ *   - Almacenar el nombre del banco.
+ *   - Mantener el registro de las titularidades asociadas al banco.
+ *   - Permitir agregar nuevas titularidades.
+ *   - Proporcionar acceso al nombre del banco.
+ *   - Mostrar la información de los clientes, cuentas y titularidades
+ *     registradas.
+ *   - Calcular el saldo promedio de las cuentas registradas.
  *
- * FALTA:
  * Colaboradores:
- * 
+ *   - Titularidad:
+ *     * Almacena objetos de tipo Titularidad.
+ *     * Consulta la información de cada titularidad para mostrarla
+ *       y calcular estadísticas.
+ *
+ *   - Cliente:
+ *     * Obtiene la información del cliente (identificación, nombre
+ *       y teléfono) mediante los objetos Titularidad para mostrarla
+ *       al usuario.
+ *
+ *   - Cuenta:
+ *     * Obtiene el número de cuenta y el saldo mediante los objetos
+ *       Titularidad para imprimir la información y calcular el saldo
+ *       promedio de las cuentas.
+ *
  * -----------------------------------------------------------------------------
  *
  * @license GNU General Public License v3.0 (GPL)
@@ -57,5 +81,6 @@ class Banco{
         void imprimirDatos();
         void calcularPromedio();
 };
+
 
 #endif // BANCO_H

@@ -3,8 +3,13 @@
  * @brief Definición de la clase Cliente.
  *
  * @details
- * Esta clase representa a un cliente en el sistema bancario. Contiene información básica del cliente, como su identificación, nombre y número de teléfono. Proporciona métodos para acceder y modificar estos datos.
- * 
+ * Esta clase representa a un cliente dentro del sistema bancario.
+ * Almacena la información básica del cliente, como su identificación,
+ * nombre y teléfono, proporcionando métodos para consultar y modificar
+ * dichos datos. Además, permite establecer la información necesaria para
+ * asociar al cliente con una o varias cuentas bancarias mediante objetos
+ * de tipo Titularidad.
+ *
  * -----------------------------------------------------------------------------
  * Estándar CRC (Clase - Responsabilidad - Colaboración)
  * -----------------------------------------------------------------------------
@@ -13,24 +18,17 @@
  *   Cliente
  *
  * Responsabilidades:
- *   - Mantener un registro del estado actual del cliente.
- *   - Almacenar la información básica del cliente.
- *   - Proporcionar métodos para acceder y modificar los datos del cliente.
+ *   - Representar un cliente dentro del sistema bancario.
+ *   - Almacenar la identificación, el nombre y el teléfono del cliente.
+ *   - Proporcionar métodos para consultar la información del cliente.
+ *   - Proporcionar métodos para modificar los datos del cliente.
  *
- * FALTA:
  * Colaboradores:
- *   - Vehicle - Bus y Car:
- *     * Crea instancias y las almacena en el vector correspondiente.
- *   - Passenger:
- *     * Crea instancias y las almacena y las almacena en el vector correspondiente.
- *   - Grid:
- *     * Encapsula e instancia un objeto de esta clase.
- *   - ParkingZone:
- *     * Encapsula e instancia un objeto de esta clase.
- *   - CGame (Controlador del Juego):
- *     * Manipula directamente a MGame usando sus metodos para cambiar el estado del juego.
- *   - VGame (Vista del Juego):
- *     * Consulta sus componentes para presentarlos al usuario.
+ *   - Titularidad:
+ *     * Se asocia con uno o varios objetos de tipo Titularidad para
+ *       representar la relación entre un cliente y sus cuentas bancarias.
+ *     * Permite que la información del cliente sea consultada desde las
+ *       titularidades registradas en el sistema.
  *
  * -----------------------------------------------------------------------------
  *
@@ -49,7 +47,6 @@
  * Debería haber recibido una copia de la Licencia Pública General de GNU
  * junto con este programa. Si no, consulte <https://www.gnu.org/licenses/>.
  */
-
 
 #ifndef CLIENTE_H
 #define CLIENTE_H
