@@ -9,6 +9,7 @@ class CuentaCorriente : public Cuenta {
 protected: // Visibilidad '#' en UML
 long limiteSobregiro;
 public: // Visibilidad '+' en UML
+CuentaCorriente(string auxNumero, long auxSaldo, long auxLimite);
 void setLimiteSobregiro(long limite);
 long getLimiteSobregiro();
 bool retirarDinero(long cantidad);

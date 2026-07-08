@@ -1,6 +1,4 @@
-
-
-#ifndef TULARIDAD_H
+#ifndef TITULARIDAD_H
 #define TITULARIDAD_H
 #include "Cliente.h"
 #include "Cuenta.h"

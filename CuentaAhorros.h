@@ -9,6 +9,7 @@ class CuentaAhorros : public Cuenta {
 protected: // Visibilidad '#' en UML
 double tasaInteres;
 public: // Visibilidad '+' en UML
+CuentaAhorros(string auxNumero, long auxSaldo, double auxTasa);
 void aplicarInteres();
 };
 #endif
