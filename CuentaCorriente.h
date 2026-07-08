@@ -54,13 +54,14 @@
 #include <string>
 #include "Cuenta.h"
 using namespace std;
+
 class CuentaCorriente : public Cuenta {
-protected:
-    long limiteSobregiro;
-public: 
-CuentaCorriente(string auxNumero, long auxSaldo, long auxLimite);
-    void setLimiteSobregiro(long limite);
-    long getLimiteSobregiro();
-    bool retirarDinero(long cantidad);
+    protected:
+        long limiteSobregiro;
+    public: 
+        CuentaCorriente(string auxNumero, long auxSaldo, long auxLimite);
+        void setLimiteSobregiro(long limite);
+        long getLimiteSobregiro();
+        bool retirarDinero(long cantidad);
 };
 #endif //CUENTACORRIENTE_H

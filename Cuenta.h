@@ -62,16 +62,16 @@
 #include <string>
 using namespace std;
 class Cuenta {
-protected:
-string id;
-long saldo;
-public:
-    Cuenta(string id, long saldo);
-string getNumeroCuenta();
-    long getSaldo();
-    void setNumeroCuenta(string id);
-    void setSaldo(long saldo);
-    bool retirarDinero(long cantidad);
-    void consignarDinero(long cantidad);
+    protected:
+        string id;
+        long saldo;
+    public:
+        Cuenta(string id, long saldo);
+        string getNumeroCuenta();
+        long getSaldo();
+        void setNumeroCuenta(string id);
+        void setSaldo(long saldo);
+        bool retirarDinero(long cantidad);
+        void consignarDinero(long cantidad);
 };
 #endif //CUENTA_H

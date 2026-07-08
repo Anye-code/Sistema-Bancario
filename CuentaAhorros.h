@@ -51,11 +51,12 @@
 #include <string>
 #include "Cuenta.h"
 using namespace std;
+
 class CuentaAhorros : public Cuenta {
-protected:
-    double tasaInteres;
-public:
-CuentaAhorros(string auxNumero, long auxSaldo, double auxTasa);
-    void aplicarInteres();
+    protected:
+        double tasaInteres;
+    public:
+        CuentaAhorros(string auxNumero, long auxSaldo, double auxTasa);
+        void aplicarInteres();
 };
 #endif //CUENTAHORROS_H
